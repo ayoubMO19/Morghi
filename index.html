@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Morghi">
+    <meta name="description" content="Página oficial de la asesoría Morghi">
+    <meta name="keywords" content="Asesoría, Trámites, Servicios">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Asesoría Morghi | Página oficial</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body> 
+    <!-- scroll top -->
+    <div id="scroll-to-top" class="divTop">
+      <a href="#hero">
+        <i class="bi bi-arrow-up-circle-fill arrow"></i>
+      </a>
+    </div>
+    <!-- Seccion hero -->
+    <section class="hero align-items-stretch" id="hero"> 
+      <!-- Barra de navegacion -->
+      <nav class="navbar navbar-expand-md fixed-top" id="nav">
+        <div class="container-lg">
+          <button class="navbar-toggler" onclick="toggleNavbar()" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="toggler"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="images/icon.png" width="50" alt="Logo Asesoría Morghi">
+          </a>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link nav" onclick="cerrarNavbar()" aria-current="page" href="#hero" data-section="hero">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav" onclick="cerrarNavbar()"  href="#about" data-section="about">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav" onclick="cerrarNavbar()" href="#tramites" data-section="tramites">Trámites</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav" onclick="cerrarNavbar()" data-bs-toggle="offcanvas" aria-controls="avisoLegal" href="#avisoLegal">Aviso Legal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav" onclick="cerrarNavbar()" data-bs-toggle="offcanvas" aria-controls="politicaPrivacidad" href="#politicaPrivacidad" href="#">Política de privacidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav" onclick="cerrarNavbar()" data-bs-toggle="offcanvas" aria-controls="politicaCookies" href="#politicaCookies">Política de cookies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link contacto" onclick="cerrarNavbar()" href="#contact" data-section="contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <!-- Titulo -->
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center tit">
+          <div class="container-lg  Titulo">
+            <h1>Asesoría Morghi<br>Tu asesoría de confianza.</h1>
+            <br><a class="verMas" href="#about"><button> Ver más </button></a>
+          </div>
+        </div>
+      </header>
+      <!-- pie pagina principal -->
+      <div class="container-lg datos">
+        <div class="row">
+          <div class="col-7 ubi">
+            <h6>Página oficial</h6>
+            <h5>Asesoría Morghi</h5>
+            <a href="https://goo.gl/maps/XPda7MyVyesZyXgCA"><p><i class="bi bi-geo-alt"></i></a>Asesoria Morghi, Carrer del Crist de la Mar, 26, 12580 Benicarló, Castellón</p>
+          </div>
+          <div class="col-3 redes">
+            <a href="tel:+34697755711"><p class="d-block subtitle"><i class="bi bi-telephone"></i></a> +34 697 755 711</p>
+            <a href="mailto:info@asesoriamorghi.es"><p class="d-block subtitle"><i class="bi bi-envelope"></i></a>  info@asesoriamorghi.es</p>
+          </div>
+          <div class="col-2 redes">
+            <p><h6>Redes Sociales</h6></p>
+            <div>
+              <p>
+                <a href="mailto:info@asesoriamorghi.es" ><i class="bi bi-envelope"></i></a>
+                <a href="https://www.facebook.com/people/Asesoria-Morghi/100089202751792/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCVEPCDyhozzLAxaiBBZBbCA"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.instagram.com/asesoriamorghi/"><i class="bi bi-instagram"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- seccion sobre nosotros -->
+    <section class="section about" id="about">
+      <!-- que aprotamos -->
+      <section class="section about">
+        <div class="container-lg information">
+            <div class="row info align-items-center mr-auto">
+              <div class="col-md-4 help">
+                <h6 class="xs-font mb-0">Que aportamos</h6>
+                <h3 class="section-title">En que podemos ayudarte?</h3>
+                <p>Descubra más sobre nuestra amplia gama de servicios profesionales.<br/><br/>Actualizamos esta página constantemente, pero si todavía no encuentra lo que busca, no dude en ponerse en contacto con nosotros, estaremos encantados de ayudarle.</p>
+                <a href="#contact"><button type="button" class="btn btn-primary">Contacto</button></a>
+              </div>
+              <div class="col-sm-6 col-md-4 ml-auto info">
+                <div class="widget">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-file-earmark-lock"></i>
+                  </div>
+                  <div class="infos-wrapper">
+                    <h4 class="text-primary">Privacidad</h4>
+                    <p>Aseguramos la privacidad de los datos del cliente</p>
+                  </div>
+                </div>
+                <div class="widget">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-person-check"></i>
+                  </div>
+                  <div class="infos-wrapper">
+                    <h4 class="text-primary">Compromiso</h4>
+                    <p>Nos comprometemos a las necesidades del cliente</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 info">
+                <div class="widget">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-file-earmark-check"></i>
+                  </div>
+                  <div class="infos-wrapper">
+                    <h4 class="text-primary">Legalidad</h4>
+                    <p>Cumplimos con todos los reglamentos necesaios</p>
+                  </div>
+                </div>
+                <div class="widget">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-clock-history"></i>
+                  </div>
+                  <div class="infos-wrapper">
+                    <h4 class="text-primary">Puntualidad</h4>
+                    <p>Respetamos los horarios y plazos de los tramites</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- experiencia -->
+      <section class="section mohamed">
+          <div class="container-lg information">
+            <h6 class="xs-font mb-0">Experiencia</h6>
+            <h3 class="section-title mb-4">Mohamed Morghi, asesor y propietario </h3>
+            <div class="row text-center">
+              <div class="col-lg-4">
+                  <a href="javascript:void(0)" class="card border-0 text-dark">
+                      <img class="card-img-top" src="images/img-1.png" alt="Asesoría Morghi">
+                      <span class="card-body">
+                          <h4 class="title mt-4">Titulos y licencias</h4>
+                          <p class="xs-font">Titulado en gestion y administración y con licencia para el negocio propio </p>
+                      </span>
+                  </a>
+              </div>
+              <div class="col-lg-4">
+                  <a href="javascript:void(0)" class="card border-0 text-dark">
+                      <img class="card-img-top" src="images/img-2.png" alt="Asesoría Morghi">
+                      <span class="card-body">
+                          <h4 class="title mt-4">+8 años de experiencia</h4>
+                          <p class="xs-font">Años de experiencia realizando una gran variedad de trámites en varias empresas</p>
+                      </span>
+                  </a>
+              </div>
+              <div class="col-lg-4">
+                  <a href="javascript:void(0)" class="card border-0 text-dark">
+                      <img class="card-img-top" src="images/img-3.png" alt="Asesoría Morghi">
+                      <span class="card-body">
+                          <h4 class="title mt-4">+5 años en el negocio</h4>
+                          <p class="xs-font">Años llevando el negocio Asesoría Morghi como asesor autónomo ofreciendo gran variedad servicios</p>
+                      </span>
+                  </a>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Tramites -->
+    <section class="section tramites" id="tramites">
+      <div class="container-lg">
+        <h6 class="xs-font mb-0">Trámites</h6>
+        <h3 class="section-title pb-4">Infórmate ya de la gran variedad de trámites que realizamos</h3>
+      </div>
+      <div class="container-fluid information tram">
+        <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+
+                <div class="card mb-3 cardT tramite1">
+                  <div class="card-body">
+                    <h2 class="card-title">Consultoría</h2>
+                    <h6 class="card-text">Siempre nos centramos en nuestros clientes. Queremos que encuentre el servicio que se adapte perfectamente a sus necesidades, por lo que ofrecemos un servicio de consultoría integral para ayudarle a tomar una decisión informada.</h6>
+                    <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card mb-3 cardT tramite2">
+                  <div class="card-body">
+                    <h2 class="card-title">DGT | ترافيكو</h2>
+                    <h6 class="card-text">Cambios de titularidad, matriculaciones, canjes, duplicados, bajas, informes...</h6>
+                    <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card mb-3 cardT tramite3">
+                  <div class="card-body">
+                    <h2 class="card-title">Extranjería | اكسترانخيرا</h2>
+                    <h6 class="card-text">Renovaciones, reagrupación familiar, arraigo social, laboral, familiar y formación, larga duración UE, tarjeta comunitaria residencia por nacimiento…</h6>
+                    <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card mb-3 cardT tramite4">
+                  <div class="card-body">
+                    <h2 class="card-title">Nacionalidad española | الجنسية الاسبانية</h2>
+                    <h6 class="card-text">Solicitud y seguimiento de expedientes, exámenes CCSE y DELE, solicitud de dispensa de exámenes, recursos...</h6>
+                    <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card mb-3 cardT tramite5">
+                  <div class="card-body">
+                    <h2 class="card-title">Traducción Jurada | ترجمة جميع الوثائق</h2>
+                    <h6 class="card-text">Traducción jurada árabe-español-francés-ingles… La calidad de nuestras traducciones e interpretaciones está certificada, jurada y reconocida por el ministerio de asuntos exteriores.</h6>
+                    <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card mb-3 cardT tramite6">
+                  <div class="card-body">
+                    <h2 class="card-title">Seguridad Social | الضمان الاجتماعي</h2>
+                    <h6 class="card-text">Ingreso mínimo vital, hijo a cargo, prestación por nacimiento, maternidad – paternidad, asistencia sanitaria, discapacidad, escritos…</h6>
+                    <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card mb-3 cardT tramite7">
+                  <div class="card-body">
+                    <h2 class="card-title">Agencia Tributaria</h2>
+                    <h6 class="card-text">Declaración de la renta, madre trabajadora, familia numerosa, certificados…</h6>
+                    <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev previo" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next proximo" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+    </section>
+
+    <!-- Tramites Movil -->
+    <section class="section tramitesMovil" id="tramites">
+      <div class="container-lg">
+        <h6 class="xs-font mb-0">Trámites</h6>
+        <h3 class="section-title pb-4">Informate ya de la gran variedad de trámites que realizamos</h3>
+      </div>
+      <div class="container-fluid infoTramites">
+        <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="images/tramite1.jpg" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Consultoría</h5>
+                    <p class="card-text">Siempre nos centramos en nuestros clientes. Queremos que encuentre el servicio que se adapte perfectamente a sus necesidades, por lo que ofrecemos un servicio de consultoría integral para ayudarle a tomar una decisión informada.</p>
+                  </div>
+                  <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="images/tramite2.jpeg" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">DGT | ترافيكو</h5>
+                    <p class="card-text">Cambios de titularidad, matriculaciones, canjes, duplicados, bajas, informes...</p>
+                  </div>
+                  <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="images/tramite3.jpg" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Extranjería | اكسترانخيرا</h5>
+                    <p class="card-text">Renovaciones, reagrupación familiar, arraigo social, laboral, familiar y formación, larga duración UE, tarjeta comunitaria residencia por nacimiento…</p>
+                  </div>
+                  <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="images/tramite4.jpg" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Nacionalidad española | الجنسية الاسبانية</h5>
+                    <p class="card-text">Solicitud y seguimiento de expedientes, exámenes CCSE y DELE, solicitud de dispensa de exámenes, recursos...</p>
+                  </div>
+                  <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="images/tramite5.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Traducción Jurada | ترجمة جميع الوثائق</h5>
+                    <p class="card-text">Traducción jurada árabe-español-francés-ingles… La calidad de nuestras traducciones e interpretaciones está certificada, jurada y reconocida por el ministerio de asuntos exteriores.</p>
+                  </div>
+                  <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="images/tramite6.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Seguridad Social | الضمان الاجتماعي</h5>
+                    <p class="card-text">Ingreso mínimo vital, hijo a cargo, prestación por nacimiento, maternidad – paternidad, asistencia sanitaria, discapacidad, escritos…</p>
+                  </div>
+                  <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="images/tramite7.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Agencia Tributaria</h5>
+                    <p class="card-text">Declaración de la renta, madre trabajadora, familia numerosa, certificados…</p>
+                  </div>
+                  <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev previo" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next proximo" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+    </section>
+
+    <!-- contacto -->
+    <section class="section contactar">
+      <!-- medios -->
+      <div class="container-lg medios">
+        <div class="row">
+          <div class="col-7 ubi">
+            <h6>Página oficial</h6>
+            <h5>Asesoría Morghi</h5>
+            <a href="https://goo.gl/maps/XPda7MyVyesZyXgCA"><p><i class="bi bi-geo-alt"></i></a>Asesoria Morghi, Carrer del Crist de la Mar, 26, 12580 Benicarló, Castellón</p>
+          </div>
+          <div class="col-3 redes">
+            <a href="tel:+34697755711"><p class="d-block subtitle"><i class="bi bi-telephone"></i></a> +34 697 755 711</p>
+            <a href="mailto:info@asesoriamorghi.es"><p class="d-block subtitle"><i class="bi bi-envelope"></i></a>  info@asesoriamorghi.es</p>
+          </div>
+          <div class="col-2 redes ">
+            <p><h6>Redes Sociales</h6></p>
+            <div>
+              <p>
+                <a href="mailto:info@asesoriamorghi.es" ><i class="bi bi-envelope"></i></a>
+                <a href="https://www.facebook.com/people/Asesoria-Morghi/100089202751792/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCVEPCDyhozzLAxaiBBZBbCA"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.instagram.com/asesoriamorghi/"><i class="bi bi-instagram"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- mensaje -->
+    <section id="contact" class="section pb-0 mensaje">
+      <div class="container-lg">
+          <h6 class="xs-font mb-0">Contáctanos ya y resuelve tus dudas</h6>
+          <h3 class="section-title mb-5">Contáctanos</h3>
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-8 col-lg-7">
+              <form class="contact-form">
+                  <div class="row">
+                      <div class="col-6 form-group">
+                          <input id="nombre" type="text" class="form-control input" placeholder="Nombre">
+                      </div>
+                      <div class="col-6 form-group">
+                          <input type="email" id="correo" class="form-control input" placeholder="Email">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <textarea name="" id="mensaje" cols="30" rows="5" class="form-control" placeholder="Tu mensaje"></textarea>
+                  </div>
+                  <div class="form-group">
+                      <input id="enviar" class="btn btn-primary btn-block" value="Enviar mensaje" onclick="enviarCorreo()">
+                  </div>
+              </form>
+          </div>
+              <div class="col-md-4 d-none d-md-block order-1">
+                  <ul class="list">
+                      <li class="list-head">
+                          <h6>DATOS DE CONTATCO</h6>
+                      </li>
+                      <li class="list-body">
+                          <p class="py-2">Póngase en contacto con nosotros y nos pondremos en contacto con usted lo más rápido posible</p>
+                          <p class="py-2"><a href="https://goo.gl/maps/XPda7MyVyesZyXgCA"><i class="bi bi-geo-alt"></i></a> Asesoria Morghi, Carrer del Crist de la Mar, 26, 12580 Benicarló, Castellón</p>
+                          <p class="py-2"><a href="mailto:info@asesoriamorghi.es"><i class="bi bi-envelope"></i></a> info@asesoriamorghi.es</p>
+                          <p class="py-2"><a href="tel:+34697755711"><i class="bi bi-telephone"></i></a> +34 697 755 711</p>
+                        </li>
+                  </ul> 
+              </div>
+          </div>
+          <footer class="footer mt-5 border-top">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 text-center text-md-left">
+                    <p class="mb-0">Todos los derechos reservados <script>document.write(new Date().getFullYear())</script> &copy; <a class="nav-link" href="#hero">Asesoría Morghi</a></p>
+                </div>
+                <div class="col-md-6 text-center text-md-right red">
+                    <div class="social-links">
+                      <a href="https://www.facebook.com/people/Asesoria-Morghi/100089202751792/"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.youtube.com/channel/UCVEPCDyhozzLAxaiBBZBbCA"><i class="bi bi-youtube"></i></a>
+                      <a href="https://www.instagram.com/asesoriamorghi/"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div> 
+          </footer>
+      </div>
+    </section>
+
+    <!-- Aviso legal -->
+    <section>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="avisoLegal" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Aviso legal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <!-- #One -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Ley aplicable y jurisdicción</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Con carácter general las relaciones entre Asesoria Morghi y los usuarios de sus servicios telemáticos, presentes en la web, se encuentran sometidas a la legislación y jurisdicción españolas.<br>
+                    <br>Las partes renuncian expresamente al fuero que les pudiera corresponder y someten expresamente a los Juzgados y Tribunales de Benicarló para resolver cualquier controversia que pueda surgir en la interpretación o ejecución de las presentes condiciones contractuales.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Two -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos" aria-expanded="true" aria-controls="collapseDos">
+                  <strong>Aceptación del usuario</strong>
+                </button>
+              </h2>
+              <div id="collapseDos" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Este Aviso Legal regula el acceso y utilización de la página web que Asesoría Morghi pone a la disposición de los usuarios de Internet. Se considera usuario la persona que acceda, navegue, utilice o participe en los servicios y actividades de la página web.<br>
+                  <br>El usuario queda informado, y acepta, que el acceso a la presente web no supone, en modo alguno, el inicio de una relación comercial con Asesoria Morghi.<br>
+                  <br>El acceso y navegación en el sitio web por parte del usuario supone la aceptación de la totalidad de las presentes Condiciones de Uso. En caso de desacuerdo con las condiciones debe abstenerse a usar el sitio web.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Three -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  <strong>Acceso a la web</strong>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  El acceso a la página web por parte de los usuarios es de carácter libre y gratuito. Algunos servicios pueden encontrarse sujetos a contratación previa del servicio.<br>
+                  <br>En caso de ser necesario que el usuario aporte datos personales para acceder a alguno de los servicios, la recogida y el tratamiento de los datos se realizará de conformidad con la normativa vigente, en concreto con el RGPD. Para más información, consulte nuestra política de privacidad https://www.asesoriamorghi.es/.<br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Four -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  <strong>Contenido y uso</strong>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  La visita al sitio web por parte del usuario deberá hacerse de forma responsable y de conformidad a la legalidad vigente, la buena fe, el presente Aviso Legal y respetando los derechos de propiedad intelectual e industrial de titularidad de Asesoria Morghi o cualquier otras personas físicas o jurídicas.<br>
+                  <br>El uso de cualquiera de los contenidos del sitio web con finalidades que sean o pudieran ser ilícitas queda totalmente prohibido, así como la realización de cualquier acción que cause o pueda causar daños o alteraciones de cualquier tipo no consentidas por Asesoria Morghi, al sitio web o a sus contenidos.<br>
+                  <br>El titular del web no se identifica con las opiniones vertidas en el mismo por sus colaboradores. La empresa se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en su Web, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la forma en la que éstos aparezcan presentados o localizados en sus servidores.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Five -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  <strong>Propiedad intelectual e industrial</strong>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Los derechos de propiedad intelectual del contenido de las páginas web, su diseño gráfico y códigos son titularidad de Asesoria Morghi y, por tanto, queda prohibida su reproducción, distribución, comunicación pública, transformación o cualquier otra actividad que se realice con los contenidos de la página web, ni siquiera, aunque se citen las fuentes, salvo que se cuente con el consentimiento previo, expreso y por escrito de Asesoria Morghi. Todos los nombres comerciales, marcas o signos distintos de cualquier clase contenidos en las páginas web de la empresa son propiedad de sus dueños y están protegidos por ley.<br>
+                  <br>Asesoria Morghi no concede ninguna licencia o autorización de uso de ninguna clase sobre sus derechos de propiedad intelectual e industrial o sobre cualquier otra propiedad o derecho relacionado con el sitio web, y en ningún caso se entenderá que el acceso y navegación de los usuarios implica una renuncia, transmisión, licencia o cesión total ni parcial de dichos derechos por parte de Asesoria Morghi.<br>
+                  <br>Cualquier uso de esos contenidos no autorizado previamente por parte de Asesoria Morghi será considerado un incumplimiento grave de los derechos de propiedad intelectual o industrial y dará lugar a las responsabilidades legalmente establecidas. Asesoria Morghi se reserva el derecho de ejercitar frente al usuario las acciones judiciales y extrajudiciales que correspondan.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Six -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                  <strong>Responsabilidad y garantías</strong>
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Asesoria Morghi declara que ha adoptado las medidas necesarias que, dentro de sus posibilidades y el estado de la tecnología, permitan el correcto funcionamiento de su sitio web, así como la ausencia de virus y componentes dañinos. Sin embargo, Asesoria Morghi no puede hacerse responsable de las siguientes situaciones que se enumeran a título enunciativo, pero no limitativo:<br>
+                  <ul>
+                    <li>La continuidad y disponibilidad de los Contenidos.</li>
+                    <li>La ausencia de errores en dichos Contenidos ni la corrección de cualquier defecto que pudiera ocurrir.</li>
+                    <li>La ausencia de virus y/o demás componentes dañinos.</li>
+                    <li>Los daños o perjuicios que cause cualquier persona que vulnere los sistemas de seguridad de Asesoria Morghi.</li>
+                    <li>El uso que los usuarios puedan hacer de los contenidos incluidos en el web. En consecuencia, Asesoria Morghi no garantiza que el uso que los usuarios puedan hacer de los contenidos que en su caso se incluyan en el sitio web, se ajusten al presente aviso legal, ni que el uso del sitio web se realice de forma diligente.</li>
+                    <li>El uso por menores de edad del sitio web o del envío de sus datos personales sin el permiso de sus tutores, siendo los tutores responsables del uso que hagan de Internet.</li>
+                    <li>Los contenidos a los que el usuario pueda acceder a través de enlaces no autorizados o introducidos por usuarios mediante comentarios o herramientas similares.</li>
+                    <li>La introducción de datos erróneos por parte del usuario o de un tercero</li>
+                    <li>Asesoria Morghi podrá suspender temporalmente y sin previo aviso, la accesibilidad al sitio web con motivo de operaciones de mantenimiento, reparación, actualización o mejora. No obstante, siempre que las circunstancias lo permitan, Asesoria Morghi comunicará al usuario, con antelación suficiente, la fecha prevista para la suspensión de los contenidos.</li>
+                    <li>Asimismo, de conformidad con los arts. 11 y 16 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico (LSSICE), Asesoria Morghi se compromete a la eliminación o, en su caso, bloqueo de los contenidos que pudieran afectar o ser contrarios a la legislación vigente, los derechos de terceros o la moral y orden público.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Seven -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                  <strong>Cookies</strong>
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Asesoria Morghi utiliza cookies, a los efectos de optimizar y personalizar su navegación por el sitio web. Las cookies son ficheros físicos de información que se alojan en el propio terminal del usuario, la información recogida mediante las cookies sirve para facilitar la navegación del usuario por el portal y optimizar la experiencia de navegación. Los datos recopilados mediante las cookies pueden ser compartidos con los creadores de las mismas, pero en ningún caso la información obtenida por las mismas será asociada a datos personales ni a datos que puedan identificar al usuario.<br>
+                  <br>Sin embargo, si el usuario no desea que se instalen cookies en su disco duro, tiene la posibilidad de configurar el navegador de tal modo que impida la instalación de estos archivos. Para obtener más información consulte nuestra Política de Cookies https://www.asesoriamorghi.es/politica- decookies/.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Eight -->
+          <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                <strong>Enlaces (links)</strong>
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                La presencia de enlaces (links) en la página web de Asesoria Morghi hacia otros sitios de Internet tiene finalidad meramente informativa y en ningún caso suponen sugerencia, invitación o recomendación sobre los mismos. Asesoria Morghi no asumirá responsabilidad por los contenidos de un enlace perteneciente a un sitio web ajeno, ni garantiz ará la fiabilidad, exactitud, amplitud, veracidad, validez y disponibilidad técnica.<br>
+                <br>En el caso de que en otros sitios web se establezcan enlaces a la página web de Asesoria Morghi, no se entenderá que Asesoria Morghi ha autorizado el enlace o el contenido del sitio web en el que se contiene el enlace, tampoco podrá incluirse en la página del enlace contenidos inapropiados, difamatorios, ilegales, obscenos o ilícitos, ni otros contenidos que sean contrarios a la legalidad vigente.<br>
+                <br>Asesoria Morghi se reserva la posibilidad de contactar con el propietario del sitio web en el que se establezca el enlace si considera que se incumple la normativa, así como de ejercitar las correspondientes acciones judiciales y extrajudiciales.
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Politica de privacidad -->
+    <section>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="politicaPrivacidad" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Politica de privacidad</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <!-- #One -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Información básica sobre Protección de Datos</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Responsable:</strong>
+                    <ul>
+                      <li>Mohamed Morghi Ouhda</li>
+                    </ul>
+                    <strong>Finalidad:</strong>
+                    <ul>
+                      <li>Prestación de servicios online</li>
+                      <li>Gestión de usuarios web</li>
+                      <li>Comunicaciones comerciales relacionadas con nuestros servicios</li>
+                    </ul>
+                    <strong>Legitimación:</strong>
+                    <ul>
+                      <li>Consentimiento expreso e interés legítimo</li>
+                    </ul>
+                    <strong>Destinatarios:</strong>
+                    <ul>
+                      <li>No se ceden datos a terceros, salvo obligación legal</li>
+                    </ul>
+                    <strong>Derechos:</strong>
+                    <ul>
+                      <li>Acceder, rectificar y suprimir los datos, así como otros derechos, como se explica en la información adicional</li>
+                    </ul>
+                    <strong>Información adicional:</strong>
+                    <ul>
+                      <li>Puede consultar la información adicional y detallada sobre Protección de Datos en las cláusulas anexas que se encuentran en https://www.asesoriamorghi.es/politica- de- privacidad/</li>
+                    </ul>
+                    <br>En Asesoria Morghi trabajamos para ofrecerte a través de nuestros productos y servicios la mejor experiencia posible. En algunos casos, es necesario recabar información para conseguirlo. Nos importa tu privacidad y creemos que debemos ser transparentes al respecto.<br>
+                    <br>Por ello, y a efectos de lo previsto en el REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 (en adelante, “RGPD”) relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos, y la LEY 34/2002, de 11 de julio, de Servicios de la Sociedad de la información y de comercio electrónico (en adelante, “LSSI”), Mohamed Morghi Ouhda informa al usuario que, como responsable del tratamiento, incorporará los datos de carácter personal facilitados por los usuarios en un fichero automatizado.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Two -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos" aria-expanded="true" aria-controls="collapseDos">
+                    <strong>Nuestro compromiso</strong>
+                  </button>
+                </h2>
+                <div id="collapseDos" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Se recogen tus datos para que la experiencia de usuario mejore, atendiendo a tus intereses y necesidades.<br>
+                    <br>Somos transparentes en relación con los datos que obtenemos acerca de ti y la razón por la que lo hacemos.<br>
+                    <br>Nuestra intención es ofrecerte la mejor experiencia posible. Por ello, cuando vayamos a usar tu información personal lo haremos siempre cumpliendo la normativa, y cuando sea necesario, solicitaremos tu consentimiento.<br>
+                    <br>Entendemos que tus datos te pertenecen. Por tanto, si decides no autorizarnos a procesarlos puedes solicitarnos que dejemos de tratarlos.<br>
+                    <br>Nuestra prioridad consiste en garantizar tu seguridad y tratar tus datos de acuerdo con la normativa europea.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Three -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <strong>¿Quién es el responsable del tratamiento de sus datos personales?</strong>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Identidad: Mohamed Morghi Ouhda<br>
+                    <br>Domicilio social: CALLE CRISTO DEL MAR 26<br>
+                    <br>C.I.F. nº : 26873199E<br>
+                    <br>Email: info@asesoriamorghi.es<br>
+                    <h6asdas>Asesoria Morghi ha designado un Delegado de Protección de Datos o una persona de contacto interna dentro de su organización.<br>
+                    <br>Si deseas hacer una consulta en relación con el tratamiento de tus datos personales, puedes ponerte en contacto con él mediante el correo info@asesoriamorghi.es
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Four -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <strong>¿Qué datos personales recopilamos?</strong>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h6>Los datos personales que el usuario puede llegar a proporcionar:</h6>
+                    <ul>
+                      <li>Nombre, dirección y fecha de nacimiento.</li>
+                      <li>Número de teléfono y dirección de correo electrónico.</li>
+                      <li>Ubicación.</li>
+                      <li>Información relativa a pagos y devoluciones.</li>
+                      <li>Dirección IP, fecha y hora en la que has accedido a nuestros servicios, navegador de internet que uses y datos sobre el sistema operativo del dispositivo.</li>
+                      <li>Cualquier otra información o datos que decidas compartir con nosotros.</li>
+                    </ul>
+                    <h6>En algunos casos, es obligatoria la cumplimentación del formulario de registro para acceder y disfrutar de determinados servicios ofrecidos en la web; asimismo, no facilitar los datos personales solicitados o el no aceptar la presente política de protección de datos supone la imposibilidad de suscribirse, registrarse o participar en cualquiera de las promociones en las que se soliciten datos carácter personal.</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Five -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    <strong>¿Por qué y para qué tratamos tus datos?</strong>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Gestionar pedidos o contratar alguno de nuestros servicios, ya sea online o en las tiendas físicas.<br>
+                    <br>Gestionar el envío de la información que nos soliciten.<br>
+                    <br>Desarrollar acciones comerciales y realizar el mantenimiento y gestión de la relación con el usuario, así como la gestión de los servicios ofrecido a través del sitio web y las labores de información, pudiendo realizar valoraciones automáticas, obtención de perfiles y labores de segmentación de los clientes con el objeto de personalizar el trato conforme a sus características y necesidades y mejorar la experiencia en línea del cliente.<br>
+                    <br>Desarrollar y gestionar los concursos, sorteos u otras actividades promocionales que se puedan organizar.<br>
+                    <br>En algunos casos será necesario facilitar información a las Autoridades o terceras empresas por motivos de auditoría, así como manejar datos personales de facturas, contratos y documentos para responder a reclamaciones de clientes o de las Administraciones Públicas<br>
+                    <br>Informamos que los datos personales que se obtengan como consecuencia de tu registro como usuario formarán parte del Registro de Actividades y operaciones de Tratamiento (RAT), que se actualizará periódicamente de acuerdo con lo establecido en el RGPD.<br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Six -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    <strong>¿Cuál es la legitimación para el tratamiento de tus datos?</strong>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Consentimiento del interesado para la contratación de servicios y productos, para los formularios de contacto, las solicitudes de información o alta en e- newsletters.<br>
+                    <br>Interés legítimo para el tratamiento de datos de nuestros clientes en acciones de marketing directo y consentimiento expreso del interesado para todo lo relativo a las valoraciones automáticas y elaboración de perfiles.<br>
+                    <br>Cumplimiento de obligaciones legales para prevención del fraude, comunicación con Autoridades públicas y reclamaciones de terceros.<br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Seven -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                    <strong>¿Cuánto tiempo conservamos tus datos?</strong>
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    El tratamiento de los datos con las finalidades descritas se mantendrá durante el tiempo necesario para cumplir con la finalidad de su recogida (por ejemplo, mientras dure la relación comercial), así como para el cumplimiento de las obligaciones legales que se deriven del tratamiento de los datos.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Eight -->
+            <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                  <strong>¿A qué destinatarios se comunican tus datos?</strong>
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  En algunos casos, solo cuando sea necesario, Asesoria Morghi proporcionará datos de los usuarios a terceros. Sin embargo, nunca se venderán los datos a terceros. Los proveedores de servicios externos (por ejemplo, proveedores de pago o empresas de reparto) con los que Asesoria Morghi trabaje pueden usar los datos para proporcionar los servicios correspondientes, sin embargo, no usarán dicha información para fines propios o para cesión a terceros.<br>
+                  <br>Asesoria Morghi procura garantizar la seguridad de los datos personales cuando se envían fuera de la empresa y se asegura que los terceros proveedores de servicio respetan la confidencialidad y cuentan con las medidas adecuadas para proteger los datos personales. Dichos terceros tienen la obligación de garantizar que la información se trata conforme con la normativa de privacidad de datos.<br>
+                  <br>En algunos casos, la ley puede exigir que se revelen datos personales a organismos públicos u otras partes, solo se revelará lo estrictamente necesario para el cumplimiento de dichas obligaciones legales.<br>
+                  <br>Los datos personales obtenidos también podrán ser compartidos con otras empresas del grupo.
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- #Nine -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                    <strong>¿Dónde se almacenan tus datos?</strong>
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Con carácter general, los datos se almacenan dentro de la UE. Los datos que se envíen a terceros que no pertenezcan a la UE, nos aseguraremos queofrez can un nivel de protección suficiente, ya sea porque cuentan con Normas Corporativas Vinculantes (BCR) o porque se hayan adherido al “Privacy Shield”.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Ten -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                    <strong>¿Qué derechos te asisten y cómo puedes ejercerlos?</strong>
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Puedes dirigir tus comunicaciones y ejercitar tus derechos mediante una petición en el siguiente correo electrónico: info@asesoriamorghi.es.<br>
+                    <br>En virtud de lo que establece el RGPD puedes solicitar:
+                    <ul>
+                      <li>Derecho de acceso: puedes pedir información de aquellos datos personales que dispongamos acerca de ti.</li>
+                      <li>Derecho de rectificación: puedes comunicar cualquier cambio en tus datos personales.</li>
+                      <li>Derecho de supresión y al olvido: puedes solicitar la eliminación previo bloqueo de los datos personales.</li>
+                      <li>Derecho de limitación al tratamiento: supone la restricción del tratamiento de los datos personales.</li>
+                      <li>Derecho de oposición: puedes retirar el consentimiento del tratamiento de los datos, oponiéndose a que se sigan tratando.</li>
+                      <li>Derecho a la portabilidad: en algunos casos, puedes pedir una copia de los datos personales en un formato estructurado, de uso común y lectura mecánica para su transmisión a otro responsable.</li>
+                      <li>Derecho a no ser objeto de decisiones individualizadas: puedes solicitar que no se tomen decisiones que se basen únicamente en el tratamiento automatizado, incluyendo la elaboración de perfiles, que produzca efectos jurídicos o afecte significativamente al interesado.</li>
+                      <li>En algunos casos, se podrá rechazar la solicitud si solicitas que se eliminen datos necesarios para el cumplimiento de obligaciones legales.</li>
+                      <li>Asimismo, si tienes alguna queja sobre el tratamiento de los datos puedes presentar una reclamación a la autoridad de protección de datos.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>       
+            <!-- #Eleven -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                    <strong>¿Quién es el responsable de la exactitud y veracidad de los datos facilitados?</strong>
+                  </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    El usuario es el único responsable de la veracidad y corrección de los datos incluidos, exonerando a Asesoria Morghi de cualquier responsabilidad al respecto. Los usuarios garantizan y responden, en cualquier caso, de la exactitud, vigencia y autenticidad de los datos personales facilitados, y se comprometen a mantenerlos debidamente actualizados. El usuario acepta proporcionar información completa y correcta en el formulario de registro o suscripción. Asesoria Morghi se reserva el derecho de finalizar los servicios contratados que se hubiera celebrado con los usuarios, en caso que los datos que haya facilitado sean falsos, incompletos, inexactos o no estén actualizados.<br>
+                    <br>Asesoria Morghi no responde de la veracidad de las informaciones que no sean de elaboración propia y de las que se indique otra fuente, por lo que tampoco asume responsabilidad alguna en cuanto a hipotéticos perjuicios que pudieran originarse por el uso de dicha información.<br>
+                    <br>Asesoria Morghi se reserva el derecho a actualiz ar, modificar o eliminar la información contenida en sus páginas web pudiendo incluso limitar o no permitir el acceso a dicha información. Se exonera a Asesoria Morghi de responsabilidad ante cualquier daño o perjuicio que pudiera sufrir el usuario como consecuencia de errores, defectos u omisiones, en la información facilitada por Asesoria Morghi siempre que proceda de fuentes ajenas a la misma.<br>
+                    <br>Asimismo, el usuario certifica que es mayor de 14 años y que posee la capacidad legal necesaria para la prestación del consentimiento en cuanto al tratamiento de sus datos de carácter personal.<br>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <!-- #Twelve -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTuelve" aria-expanded="true" aria-controls="collapseTuelve">
+                    <strong>¿Quién es el responsable de la exactitud y veracidad de los datos facilitados?</strong>
+                  </button>
+                </h2>
+                <div id="collapseTuelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    En principio nuestros servicios no van dirigidos específicamente a menos de edad. Sin embargo, en el supuesto de que alguno de ellos se dirija a menores de catorce años, de conformidad con el artículo 8 del RGPD y el artículo 7 de la LO3/2018, de 5 de diciembre (LOPDGDD), Asesoria Morghi exigirá el consentimiento válido, libre, inequívoco, específico e informado de sus tutores legales para tratar los datos personales de los menores. En este caso, se exigirá el DNI u otra forma de identificación de quien preste el consentimiento.<br>
+                    <br>En el caso de mayores de catorce años podrá procederse al tratamiento de los datos con el consentimiento del usuario, exceptuando aquellos casos en los que la Ley exija la asistencia de los titulares de la patria potestad o tutela.<br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Thirteen -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+                    <strong>¿Qué medidas de seguridad aplicamos para proteger tus datos personales?</strong>
+                  </button>
+                </h2>
+                <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Asesoria Morghi ha adoptado los niveles de seguridad de protección de los Datos Personales legalmente requeridos, y procura instalar aquellos otros medios y medidas técnicas adicionales a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los Datos Personales facilitados a Asesoria Morghi.<br>
+                    <br>Asesoria Morghi no es responsable de hipotéticos daños o perjuicios que se pudieran derivar de interferencias, omisiones, interrupciones, virus informáticos, averías telefónicas o desconexiones en el funcionamiento operativo de este sistema electrónico, motivadas por causas ajenas a Asesoria Morghi; de retrasos o bloqueos en el uso del presente sistema electrónico causados por deficiencias o sobrecargas de líneas telefónicas o sobrecargas en el Centro de Procesos de Datos, en el sistema de Internet o en otros sistemas electrónicos, así como de daños que puedan ser causados por terceras<br>
+                    <br>personas mediante intromisiones ilegítimas fuera del control de Asesoria Morghi. Ello, no obstante, el usuario debe ser consciente de que las medidas de seguridad en Internet no son inexpugnables.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Fourteen -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen">
+                    <strong>¿Qué medidas de seguridad aplicamos para proteger tus datos personales?</strong>
+                  </button>
+                </h2>
+                <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Asesoria Morghi ha adoptado los niveles de seguridad de protección de los Datos Personales legalmente requeridos, y procura instalar aquellos otros medios y medidas técnicas adicionales a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los Datos Personales facilitados a Asesoria Morghi.<br>
+                    <br>Asesoria Morghi no es responsable de hipotéticos daños o perjuicios que se pudieran derivar de interferencias, omisiones, interrupciones, virus informáticos, averías telefónicas o desconexiones en el funcionamiento operativo de este sistema electrónico, motivadas por causas ajenas a Asesoria Morghi; de retrasos o bloqueos en el uso del presente sistema electrónico causados por deficiencias o sobrecargas de líneas telefónicas o sobrecargas en el Centro de Procesos de Datos, en el sistema de Internet o en otros sistemas electrónicos, así como de daños que puedan ser causados por terceras<br>
+                    <br>personas mediante intromisiones ilegítimas fuera del control de Asesoria Morghi. Ello, no obstante, el usuario debe ser consciente de que las medidas de seguridad en Internet no son inexpugnables.
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <!-- #Fifeteen -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifeteen" aria-expanded="true" aria-controls="collapseFifeteen">
+                    <strong>Enlaces a otros sitios web</strong>
+                  </button>
+                </h2>
+                <div id="collapseFifeteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    En el sitio web https://www.asesoriamorghi.es/ puede haber enlaces a otras páginas web. Al clicar en uno de estos enlaces y acceder a un sitio web externo, la visita estará sujeta a la política de privacidad de dicho sitio web, quedando Asesoria Morghi desvinculada de cualquier tipo de responsabilidad acerca de su política de privacidad.
+                  </div>
+                </div>
+              </div>
+            </div>     
+            <!-- #Sixteen -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="true" aria-controls="collapseSixteen">
+                    <strong>Enlaces a otros sitios web</strong>
+                  </button>
+                </h2>
+                <div id="collapseSixteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    El sitio web de Asesoria Morghi utiliza cookies, a los efectos de optimizar y personalizar su navegación por el mismo. Las cookies son ficheros físicos de información que se alojan en el propio terminal del usuario, la información recogida mediante las cookies sirve para facilitar la navegación del usuario por el portal y optimizar la experiencia de navegación. Los datos recopilados mediante las cookies pueden ser compartidos con los creadores de las mismas, pero en ningún caso la información obtenida por las mismas será asociada a datos personales ni a datos que puedan identificar al usuario.<br>
+                    <br>Sin embargo, si el usuario no desea que se instalen cookies en su disco duro, tiene la posibilidad de configurar el navegador de tal modo que impida la instalación de estos archivos. Para obtener más información consulte nuestra Política de Cookies https://www.asesoriamorghi.es/politica- decookies/.<br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>Esta política de privacidad puede modificarse. Te recomendamos que revises la política de privacidad con cierta periodicidad.
+        </div>
+      </div>
+    </section>
+
+    <!-- Politica de cookies -->
+    <section>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="politicaCookies" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Política de cookies</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <!-- #One -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Política de cookies</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    En cumplimiento con el deber de información recogido en el apartado 2º del artículo 22 de la Ley 34/2002, de 11 de Julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, la presente política de cookies tiene por finalidad informarle de manera clara y precisa sobre las cookies que se utilizan en la página web de Mohamed Morghi Ouhda.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Two -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos" aria-expanded="true" aria-controls="collapseDos">
+                  <strong>¿Qué son las cookies?</strong>
+                </button>
+              </h2>
+              <div id="collapseDos" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Una cookie es un fichero de pequeño tamaño que los sitios web envían al navegador y se descargan en su ordenador. Las cookies permiten que la página web almacene y recupere la información sobre su visita, como su idioma preferido y otras opciones, con el fin de mejorar los servicios que se ofrecen y contribuir a tener una mejor experiencia de navegación para el usuario.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Three -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  <strong>Tipos de cookies</strong>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  En función de quién gestione el dominio desde donde se envían las cookies y se traten los datos, se distinguirá entre cookies propias y cookies de terceros.<br>
+                  <br>Las cookies también pueden clasificarse según el plazo de tiempo que permanezcan almacenadas en el navegador del usuario, distinguiéndose entre cookies de sesión o cookies persistentes.<br>
+                  <br>Finalmente, en función de la finalidad para la que se trate la información recopilada, las cookies se pueden clasificar en las siguientes categorías:
+                  <ul>
+                    <li>Cookies técnicas: permiten al usuario navegar por un sitio web y utilizar algunos de los servicios ofrecidos por el mismo (como, por ejemplo, las que sirven para recordar los elementos integrantes de un carrito de compra).</li>
+                    <li>Cookies de personalización: permiten que el usuario acceda al sitio web con unas características determinadas, como puede ser el idioma.</li>
+                    <li>Cookies de seguridad: sirven para impedir o dificultar los ataques contra el sitio web.</li>
+                    <li>Cookies de complemento para intercambiar contenidos sociales: los llamados plug-in, que permiten compartir contenidos en redes sociales.</li>
+                    <li>Cookies de análisis: permiten al responsable el seguimiento del comportamiento del usuario.</li>
+                    <li>Cookies publicitarias: permiten gestionar los espacios de publicidad del sitio web.</li>
+                    <li>Cookies de publicidad comportamental: como las anteriores, sirven para gestionar los espacios de publicidad del sitio web en función de la información recogida sobre el comportamiento del usuario y sus hábitos, adaptando la publicidad al perfil del usuario. Cookies de geolocalización: utilizadas para averiguar el país dónde se encuentra el usuario.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Four -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  <strong>Autorización para el uso de cookies</strong>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  De conformidad con el aviso de cookies que aparece en el sitio web, el usuario puede consentir expresamente el uso de cookies que requieran consentimiento; sin embargo, el uso de cookies técnicas o necesarias no requiere de consentimiento. Sin perjuicio de todo ello, el usuario puede modificar la configuración de su navegador para rechaz ar el uso de las cookies.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Five -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  <strong>Cómo modificar la configuración de las cookies</strong>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Usted puede restringir, bloquear o borrar las cookies de Asesoria Morghi o cualquier otra página web utilizando su navegador. En cada navegador la operativa es diferente, puede encontrar cómo hacerlo en el menú de ayuda de su navegador dónde se establece el procedimiento para su eliminación. Para más información:<br>
+                  <br>Google Chrome:<br>
+                  <a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=es">Enlace directo</a><br>
+                  <br>Mozilla Firefox:<br>
+                  <a href="https://support.moz illa.org/es/kb/habilitar- y- deshabilitar- cookies- sitios- web- rastrear- preferencias">Enlace directo</a><br>
+                  <br>Safari:<br>
+                  <a href="https://support.apple.com/es- es/guide/safari/sfri11471/mac">Enlace directo</a><br>
+                  <br>Internet Explorer:<br>
+                  <a href="https://support.microsoft.com/es- es/help/278835/how- to- delete- cookie- files- in- internet- explorer">Enlace directo</a><br>
+                  <br>Es posible que al deshabilitar las cookies la página web no funcione correctamente o no pueda acceder a determinadas funciones de la misma. Cookies utilizadas en la web<br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #Six -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                  <strong>Modificación de las condiciones</strong>
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Mohamed Morghi Ouhda se reserva expresamente el derecho a modificar unilateralmente, total o parcialmente, sin necesidad de previo aviso, la presente Política de Cookies. El usuario reconoce y acepta que es su responsabilidad revisar la presente Política de Cookies.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <!-- Scripts -->
+    <!-- bootstrapJS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- emailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+    <!-- alertas js -->
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script> 
+    <!-- js propio -->
+    <script src="js.js"></script>
+
+
+  </body>
+</html>
