@@ -601,6 +601,7 @@ header{
 @media screen and (max-width: 576px) {
   .hero{
     height: 93vh;
+    border: none;
   }
 
   .ubi{
