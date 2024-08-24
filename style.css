@@ -551,6 +551,7 @@ header{
   }
 }
 
+/* Adaptable (Responsivo) */
 @media screen and (max-width: 767px) {
   .hero h1, h2{
     font-size: 2.8rem !important;
@@ -598,6 +599,7 @@ header{
   }
 }
 
+/* Adaptable (Responsivo) */
 @media screen and (max-width: 576px) {
   .hero{
     height: 93vh;
@@ -639,6 +641,7 @@ header{
   }
 }
 
+/* Adaptable (Responsivo) */
 @media screen and (max-width: 463px) {
   .hero h1, h2{
     font-size: 2.4rem !important;
@@ -649,12 +652,14 @@ header{
 
 }
 
+/* Adaptable (Responsivo) */
 @media screen and (max-width: 415px) {
   .hero h1, h2{
     font-size: 2.2rem !important;
   }
 }
 
+/* Adaptable (Responsivo) */
 @media screen and (max-width: 390px) {
   .hero h1, h2{
     font-size: 2.1rem !important;
@@ -665,6 +670,7 @@ header{
   }
 }
 
+/* Adaptable (Responsivo) */
 @media screen and (max-width: 360px) {
   .hero h1, h2{
     font-size: 2rem !important;
