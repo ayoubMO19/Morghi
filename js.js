@@ -11,7 +11,7 @@ $(document).ready(function() {
 
       $('html, body').animate({
         scrollTop: targetOffset - navbarHeight
-      }, 700);
+      }, 0);
     }
   });
 });

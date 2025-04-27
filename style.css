@@ -159,14 +159,12 @@ header{
 }
 
 .hero i, .contactar i{
-  color: white;
-  font-size: 18px;
+  font-size: 22px;
   text-decoration: none;
-
 }
 
 .hero i:focus, i:hover, .contactar i:focus, i:hover {
-  color: rgb(0, 110, 255);
+  color: rgb(255, 255, 255);
 }
 
 /* Seccion Hero */
@@ -192,6 +190,7 @@ header{
 .datos {
   padding: 1rem;
   border: none;
+  height: 25%;
 }
 
 .ubi {
@@ -203,6 +202,27 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: end;
+
+  .youtube-icon{
+    color: red;
+  }
+
+  .email-icon{
+    color: rgb(255, 255, 255);
+  }
+
+  .youtube-icon{
+    color: red;
+  }
+
+  .instagram-icon{
+    color: rgb(255, 255, 255);
+  }
+
+  .phone-icon{
+    color: rgba(0, 255, 0, 0.685);
+  }
+
 }
 
 /* seccion about */
